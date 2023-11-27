@@ -15,6 +15,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
+      replicas: ${replicas}
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
